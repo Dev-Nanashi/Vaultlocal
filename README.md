@@ -297,4 +297,4 @@ It prioritizes:
 
 * Control over convenience
 * Transparency over abstraction
-* Securit
+* Security
