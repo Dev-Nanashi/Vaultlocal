@@ -1,0 +1,59 @@
+# =========================
+# Rust / Cargo
+# =========================
+/target/
+**/*.rs.bk
+
+# =========================
+# Build artifacts
+# =========================
+*.exe
+*.dll
+*.so
+*.dylib
+*.lib
+*.a
+*.pdb
+
+# =========================
+# OS / Editor junk
+# =========================
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.tmp
+*.log
+
+# VS Code
+.vscode/
+
+# JetBrains
+.idea/
+
+# =========================
+# Environment / Secrets
+# =========================
+.env
+.env.*
+*.key
+*.pem
+*.secret
+
+# =========================
+# VaultLocal specific (IMPORTANT)
+# =========================
+
+# Vault database & meta files
+*.db
+*.sqlite
+*.sqlite3
+*.meta
+
+# Test vaults / temp data
+vault/
+*.vault
+test.db
+
+# Backup files
+*.bak
