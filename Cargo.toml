@@ -1,0 +1,30 @@
+[package]
+name = "vaultlocal"
+version = "0.1.0"
+edition = "2021"
+build = "build.rs"
+
+[[bin]]
+name = "vaultlocal"
+path = "src/main.rs"
+
+[lib]
+name = "vaultlocal"
+path = "src/lib.rs"
+
+[dependencies]
+openssl = { version = "0.10", features = ["vendored"] }
+rusqlite = { version = "0.31", features = ["bundled-sqlcipher-vendored-openssl"] }
+argon2 = "0.5"
+hkdf = "0.12"
+sha2 = "0.10"
+aes-gcm-siv = "0.11"
+aead = { version = "0.5", features = ["alloc"] }
+zeroize = { version = "1.7", features = ["derive"] }
+rand = "0.8"
+hex = "0.4"
+clap = { version = "4", features = ["derive"] }
+rpassword = "7"
+
+[dev-dependencies]
+tempfile = "3"
