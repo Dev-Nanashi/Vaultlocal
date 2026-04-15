@@ -138,7 +138,7 @@ Root Key
 ## Installation
 
 ```bash
-git clone <repo>
+git clone https://github.com/Dev-Nanashi/Vaultlocal.git
 cd VaultLocal
 cargo build --release
 ```
